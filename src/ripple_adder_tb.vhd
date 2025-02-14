@@ -58,7 +58,7 @@ begin
 	   w_addends <= x"21"; w_Cin <= '0'; wait for 10 ns;
 	       assert (w_sum = x"3" and w_Cout = '0') report "bad with 21+0" severity failure;
 	   w_addends <= x"19"; w_Cin <= '1'; wait for 10 ns;
-	       assert (w_sum = x"1A" and w_Cout = '1') report "bad with 19+1" severity failure;
+	       assert (w_sum = x"B" and w_Cout = '1') report "bad with 19+1" severity failure;
 	end process;	
 	-----------------------------------------------------	
 	
